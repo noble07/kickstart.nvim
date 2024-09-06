@@ -1,6 +1,6 @@
 --[[
 
-=====================================================================
+=pv====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
 =====================================================================
 ========                                    .-----.          ========
@@ -93,6 +93,9 @@ vim.g.maplocalleader = ' '
 -- Set to true if you have a Nerd Font installed and selected in the terminal
 vim.g.have_nerd_font = true
 
+-- Set Netrw page division size
+-- vim.g.netrw_winsize = 30
+
 -- [[ Setting options ]]
 -- See `:help vim.opt`
 -- NOTE: You can change these options as you wish!
@@ -159,6 +162,9 @@ vim.opt.scrolloff = 10
 
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
+
+-- Netrw keymap
+vim.keymap.set('n', '<leader>e', '<cmd>Lexplore<CR>', { desc = 'Open Netrw [E]xplorer in current working dir' })
 
 -- Clear highlights on search when pressing <Esc> in normal mode
 --  See `:help hlsearch`
